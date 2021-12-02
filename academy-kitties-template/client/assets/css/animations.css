@@ -1,0 +1,128 @@
+.movingHead {
+  animation: moveHead 3s infinite;
+}
+
+.movingTail {
+  animation: moveTail 3s infinite;
+}
+
+.movingNose {
+  animation: moveNose 2s infinite;
+}
+
+.movingEyes {
+  animation: moveEyes 3s infinite;
+}
+
+.movingEars {
+  animation: moveEars 6s infinite;
+}
+
+.movingWhiskers {
+  animation: moveWhiskers 3s infinite;
+}
+
+@keyframes moveHead {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes moveTail {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes moveNose {
+  0% {
+    transform: rotate(0deg) scale(1, 1);
+  }
+  25% {
+    transform: rotate(4deg) scale(1.03, 1.03);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.07, 1.07);
+  }
+  75% {
+    transform: rotate(2deg) scale(1.03, 1.03);
+  }
+  100% {
+    transform: rotate(0deg) scale(1, 1);
+  }
+}
+
+@keyframes moveEyes {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  75% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes moveEars {
+  0%,
+  50%,
+  56%,
+  89%,
+  100% {
+    transform: rotate(0deg);
+  }
+  51%,
+  55% {
+    transform: rotate(5deg);
+  }
+  90%,
+  98% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes moveWhiskers {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

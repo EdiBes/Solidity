@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker&display=swap");
+body {
+  margin: 0;
+  background: white;
+  font-family: "Blinker", sans-serif;
+  font-weight: 800;
+  color: Black;
+}
+.footer {
+  position: relative;
+  color: Black;
+  text-align: center;
+}
+.startButton {
+  color: green;
+  left: 200px;
+  position: absolute;
+}
+/*------------------------------------------------------------------------------
+NAVBAR */
+
+.container1 {
+  width: 80%;
+  margin: auto;
+  z-index: 52;
+}
+
+header {
+  background: white;
+  position: relative;
+  z-index: 52;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*
+.logo {
+  float: left;
+  padding: 10px 0px 0px 0px;
+  position: relative;
+  left: -100px;
+  max-width: 100%;
+  max-height: 100%;
+}
+*/
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 35px;
+  position: relative;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 27px;
+}
+
+nav a:hover {
+  color: #7289da;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #7289da;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
